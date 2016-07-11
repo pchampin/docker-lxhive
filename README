@@ -1,7 +1,7 @@
 Usage:
 
         # run lxHive service
-        docker run --name lxhive -p 8080:80 -v[local-path-to]/ pchampin/lxhive
+        docker run --name lxhive -p 8080:80 -v mongodb-data:/var/lib/mongodb -v lxhive-storage:/lxHive/storage pchampin/lxhive
 
         # run ./X command for configuration
         docker exec -it lxhive ./X [args]
