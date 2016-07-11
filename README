@@ -1,0 +1,13 @@
+Usage:
+
+        # run lxHive service
+        docker run --name lxhive -p 8080:80 -v[local-path-to]/ pchampin/lxhive
+
+        # run ./X command for configuration
+        docker exec -it lxhive ./X [args]
+
+NB: MongoDB takes a long time to really start,
+so get patient if apache does not start right away.
+
+Note that, in order to actually use LxHive,
+you will have to use ./X user:create and ./X auth:basic:create.
